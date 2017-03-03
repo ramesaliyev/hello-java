@@ -7,3 +7,9 @@
 - our source codes are .java files
 - .class files are compiled version of our classes
 - they are bigger in size
+
+- after creating a new project:
+-- go to project panel
+-- right click to main folder
+-- select "open module settings"
+-- and make sure to "language level"
