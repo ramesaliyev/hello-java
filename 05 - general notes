@@ -1,0 +1,1 @@
+- every whole number literal is actually an int and you should cast it before assign to types other than int or long.
