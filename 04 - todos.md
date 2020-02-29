@@ -1,0 +1,2 @@
+- [ ] complete [Java Programming Masterclass for Software Developers](https://www.udemy.com/course/java-the-complete-java-developer-course/) udemy course
+- [ ] read [Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997) book

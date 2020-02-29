@@ -1,0 +1,9 @@
+- the `src` folder is place where we put our source codes
+- ide will create `out` folder when we build / run our code
+---
+- `*.iml` file belongs to IntelliJ IDEA, to keep state of project, we dont touch it, but we should ignore it in VCS
+- same goes for `.idea` and `out` folders
+---
+- our source codes are `.java` files
+- `.class` files are compiled version of our classes
+- they are bigger in size

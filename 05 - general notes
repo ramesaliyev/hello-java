@@ -1,5 +1,0 @@
-- every whole number literal is actually an int and you should cast it before assign to types other than int or long.
-- instance variables get defauls, but local variables dont.
-- default of instance variables 0 for whole numbers (including char), 0.0 for decimals, and false for boolean
-- use == to compare primitives and object reference check
-- use equals() for string comparasion and object content check (how?)

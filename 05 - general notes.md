@@ -1,0 +1,17 @@
+- every whole number literal is actually an `int`
+  - you should `cast it` before assigning to types other than `int or long`.
+  - java will try to cast it automatically if you don't and if value doesn't fits to target data type, IDE will complain.
+- every floating number literal is actually a `double`.
+  - double is recommended to use always for floating-point numbers these days.
+- for precise calculations, a class called BigDecimal should be used instead of float or double.
+---
+- use `==` to compare primitives and do an object reference check
+- use `equals()` for string comparison and object content check
+---
+- here is a [list of keywords of java](https://www.wikiwand.com/en/List_of_Java_keywords)
+---
+- instance variables get defaults, but local variables don't.
+- default of instance variables
+  - `0` for `whole numbers` (including char),
+  - `0.0` for `decimals`
+  - `false` for `boolean`
