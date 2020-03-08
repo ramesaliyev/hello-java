@@ -1,2 +1,6 @@
 - [ ] complete [Java Programming Masterclass for Software Developers](https://www.udemy.com/course/java-the-complete-java-developer-course/) udemy course
+- [ ] complete [JetBrains Academy Java Track](https://hi.hyperskill.org/)
 - [ ] read [Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997) book
+- [ ] read [Core Java Volume I - Fundamentals](https://www.amazon.com/Core-Java-I-Fundamentals-11th-Horstmann/dp/0135166306) book
+- [ ] read [Core Java Volume I - Advanced Features](https://www.amazon.com/Core-Java-II-Advanced-Features-11th/dp/0135166314/) book
+- [ ] read [Java The Complete Reference](https://www.amazon.com/Java-Complete-Reference-Eleventh/dp/1260440230) book

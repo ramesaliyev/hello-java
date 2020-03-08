@@ -6,12 +6,51 @@
 - for precise calculations, a class called BigDecimal should be used instead of float or double.
 ---
 - use `==` to compare primitives and do an object reference check
-- use `equals()` for string comparison and object content check
+- use `.equals()` for string comparison and object content check
 ---
 - here is a [list of keywords of java](https://www.wikiwand.com/en/List_of_Java_keywords)
 ---
+- all classes in java are automatically inherited from java supplied class `Object`
 - instance variables get defaults, but local variables don't.
 - default of instance variables
   - `0` for `whole numbers` (including char),
   - `0.0` for `decimals`
   - `false` for `boolean`
+  - `null` for `Class` therefore for `String`
+---
+- `method overloading`
+  - providing two or more separate methods in a class with **same name** but **different parameters**. 
+  - return type may or may not be different
+  - may or may not have different access modifiers
+  - **can** overload **static** and **instance** methods
+  - method can also be treated as overloaded in the subclass 
+  - **may** throw different exceptions
+  - also known as **compile-time polymorphism**, because the compiler decided which method is going to be called based on the method name, return type and argument list. 
+- `method overriding`
+  - defining a method in the child class **that already exists in the parent class** with same signature (same name, same arguments)
+  - **cant** override **static** methods, only **instance** methods can be overridden
+  - return type **can** be a subclass of the return type in the parent class
+  - **cant** have a **lower access modifier** 
+  - **cant** override **constructors** and **private methods**
+  - **cant** override methods that are **final**
+  - methods which comes from the parent class known as **derived methods**
+  - **must not** throw a new or broader checked exception
+  - its recommended to use **@Override** annotation to make compiler show us an error if we dont follow the overriding rules correctly
+  - also known as **runtime polymorphism** and **dynamic method dispatch**, because the method that is going to be called is decided at runtime by the JVM.
+- `inheritance`
+  - is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+- `composition`
+  - is the design technique to implement has-a relationship in classes.
+- `encapsulation`
+  - is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+- `polymorphism`
+  - is a concept by which we can perform a single action in different ways. The word ‘polymorphism’ literally means ‘a state of having many shapes’ or ‘the capacity to take on different forms’. When applied to object-oriented programming it describes a language’s ability to process objects of various types and classes through a single, uniform interface.
+  - An important example of polymorphism is how a parent class refers to a child class object.
+  - There are two types of polymorphism in Java:
+    - `compile-time polymorphism (static binding)`: **method overloading**
+      - At compile time, Java knows which method to invoke by checking the method signatures.  So, this is called compile time polymorphism or static binding.
+    - `runtime polymorphism (dynamic binding)`: **method overriding**
+      - A call to an overridden method is resolved at runtime. As the method to call is determined at runtime, this is called dynamic binding or late binding.
+---
+- use `cmd + n`; `generate menu` to quickly generate getters and setters
+- use `cmd + p`; to bring up parameter hints for methods calls
