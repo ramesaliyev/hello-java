@@ -37,4 +37,9 @@ public class Methods {
     public static int sum(int a, int b, int c) {
         return a + b + c;
     }
+
+    // null returning
+    public static String returnNull() {
+        return null;
+    }
 }

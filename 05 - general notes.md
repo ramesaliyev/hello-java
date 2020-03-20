@@ -8,6 +8,8 @@
 - use `==` to compare primitives and do an object reference check
 - use `.equals()` for string comparison and object content check
 ---
+- you can return null from a method which returns a reference type (aka object or non-primitive).
+---
 - here is a [list of keywords of java](https://www.wikiwand.com/en/List_of_Java_keywords)
 ---
 - all classes in java are automatically inherited from java supplied class `Object`
@@ -16,7 +18,8 @@
   - `0` for `whole numbers` (including char),
   - `0.0` for `decimals`
   - `false` for `boolean`
-  - `null` for `Class` therefore for `String`
+  - `null` for `reference types` therefore for `String`
+- default for numerical array item values is `0`
 ---
 - `method overloading`
   - providing two or more separate methods in a class with **same name** but **different parameters**. 
@@ -51,6 +54,25 @@
       - At compile time, Java knows which method to invoke by checking the method signatures.  So, this is called compile time polymorphism or static binding.
     - `runtime polymorphism (dynamic binding)`: **method overriding**
       - A call to an overridden method is resolved at runtime. As the method to call is determined at runtime, this is called dynamic binding or late binding.
+---
+`Iterable` -> `Collection` -> `List` -> `ArrayList`
+- `Iterable` *interface*
+  - just defines the `iterator()` method
+- `Collection` *interface*
+  - has a very simple contract - it implies basically only that you have a bunch of elements, you can add and remove elements, check whether the collections contains a specific element, and iterate over them.
+- `List` *interface*
+  - has in its contract that the elements have an order that will not change except through explicit manipulation, that you can `get()` the n'th element, that `add()` puts new elements at the end, etc.
+- `ArrayList` *class*
+  - is just a concrete implementation of `List` and should never be used in an API. Its usage should only ever be an implementation detail (unless you have some very specific requirements).
+---
+- `Autoboxing`:
+  - Converting a primitive value into an object of the corresponding wrapper class is called autoboxing. For example, converting int to Integer class. The Java compiler applies autoboxing when a primitive value is:
+    - Passed as a parameter to a method that expects an object of the corresponding wrapper class.
+    - Assigned to a variable of the corresponding wrapper class.
+- `Unboxing`:
+  - Converting an object of a wrapper type to its corresponding primitive value is called unboxing. For example conversion of Integer to int. The Java compiler applies unboxing when an object of a wrapper class is:
+    - Passed as a parameter to a method that expects a value of the corresponding primitive type.
+    - Assigned to a variable of the corresponding primitive type.
 ---
 - use `cmd + n`; `generate menu` to quickly generate getters and setters
 - use `cmd + p`; to bring up parameter hints for methods calls
